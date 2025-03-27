@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import background from './assets/background.svg'
+import background from './assets/background.webp'
 import './App.css'
 import Login from './components/login'
 import Register from './components/register'
