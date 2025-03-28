@@ -1,4 +1,6 @@
 import background from '../assets/background.webp'
+import { Select } from '@headlessui/react'
+
  
 function Register(){
     return(
@@ -29,6 +31,17 @@ function Register(){
               type="password" 
               className="w-full px-4 py-2 mb-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all"
             />
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1">Select Role</label>
+              <Select className="w-full px-4 py-2 mb-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none transition-all">
+              <option value="administrator">Administrator</option>
+              <option value="astronomer">Astronomer</option>
+              <option value="telescope_operator">Telescope Operator</option>
+              <option value="science_observer">Science Observer</option>
+              <option value="support">Support</option>
+            </Select>
           </div>
 
           <button className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-2.5 rounded-lg transition-colors">
